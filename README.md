@@ -1,4 +1,4 @@
-# Hinata_FirstUP
+# Hinata_FirstApp
 
 > AIがTodoからスケジュールを自動生成する、フルスタックタスク管理アプリ
 
