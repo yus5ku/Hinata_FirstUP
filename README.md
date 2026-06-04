@@ -66,6 +66,7 @@
 | [TypeScript](https://www.typescriptlang.org/) | 5          | 型安全な開発                 |
 | [Tailwind CSS](https://tailwindcss.com/)      | 3          | スタイリング                 |
 | [shadcn/ui](https://ui.shadcn.com/)           | latest     | UIコンポーネント             |
+| [zod](https://zod.dev/)           | latest     | UIコンポーネント             |
 
 ### バックエンド / インフラ
 
