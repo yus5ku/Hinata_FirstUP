@@ -72,7 +72,7 @@
 | 技術                                     | バージョン | 用途                             |
 | ---------------------------------------- | ---------- | -------------------------------- |
 | [Supabase](https://supabase.com/)        | -          | 認証・データベース（PostgreSQL） |
-| [Prisma](https://www.prisma.io/)         | 5          | ORM                              |
+| [Prisma](https://www.prisma.io/)         | 7          | ORM                              |
 | [Claude API](https://www.anthropic.com/) | -          | AIスケジュール生成               |
 
 ---

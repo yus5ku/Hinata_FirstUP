@@ -1,0 +1,54 @@
+datasource db{ 
+  provider = "postgresql"
+}
+
+generator client {
+  provider = "prisma-client"
+  output = "../src/generated/prisma"
+}
+
+
+
+model User {
+  id        String      @id @default(uuid())
+  email     String      @unique
+  todos     Todo[]
+  settings  UserSetting?
+}
+
+model Todo {
+  id          String    @id @default(uuid())
+  title       String
+  description String?
+  priority    Priority  @default(MEDIUM)
+  status      Status    @default(PENDING)
+  userId      String
+  user        User      @relation(fields: [userId], references: [id])
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+}
+
+// 生活リズム設定
+model UserSetting {
+  id          String   @id @default(uuid())
+  userId      String   @unique
+  user        User     @relation(fields: [userId], references: [id])
+  wakeUp      String   // 例: "07:00"
+  bedTime     String   // 例: "24:00"
+  meals       Json     // 例: ["07:30", "12:00", "19:00"]
+  school      Json?    // 例: { start: "09:00", end: "17:00" }
+  partTime    Json?    // 例: { start: "18:00", end: "21:00" }
+  updatedAt   DateTime @updatedAt
+}
+
+enum Priority { 
+  LOW  
+  MEDIUM  
+  HIGH 
+}
+
+enum Status { 
+  PENDING
+  IN_PROGRESS
+  DONE
+}
