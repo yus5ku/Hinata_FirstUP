@@ -2,11 +2,11 @@
 
 > AIがTodoからスケジュールを自動生成する、フルスタックタスク管理アプリ
 
-![Next.js](https://img.shields.io/badge/Next.js-15-black?logo=next.js)
+![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=next.js)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)
 ![Supabase](https://img.shields.io/badge/Supabase-green?logo=supabase)
 ![Prisma](https://img.shields.io/badge/Prisma-ORM-2D3748?logo=prisma)
-![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3-38B2AC?logo=tailwind-css)
+![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-4-38B2AC?logo=tailwind-css)
 
 ---
 
@@ -62,9 +62,9 @@
 
 | 技術                                          | バージョン | 用途                         |
 | --------------------------------------------- | ---------- | ---------------------------- |
-| [Next.js](https://nextjs.org/)                | 15         | フレームワーク（App Router） |
+| [Next.js](https://nextjs.org/)                | 16         | フレームワーク（App Router） |
 | [TypeScript](https://www.typescriptlang.org/) | 5          | 型安全な開発                 |
-| [Tailwind CSS](https://tailwindcss.com/)      | 3          | スタイリング                 |
+| [Tailwind CSS](https://tailwindcss.com/)      | 4          | スタイリング                 |
 | [shadcn/ui](https://ui.shadcn.com/)           | latest     | UIコンポーネント             |
 
 ### バックエンド / インフラ
@@ -237,4 +237,3 @@ middleware.ts でセッション確認
 未認証 → /login へリダイレクト
 認証済 → ダッシュボードへ
 ```
-
